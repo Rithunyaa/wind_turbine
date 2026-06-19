@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2oqdy7g28rj7"
-path="res://.godot/imported/edited-photo.png-9bca8426a38f5180eee3e46e989cb73c.ctex"
+uid="uid://br376hmemgofp"
+path="res://.godot/imported/main_blades.png-51be9a4f3c69ceeaf6696580e6527a78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/turbine_pics/edited-photo.png"
-dest_files=["res://.godot/imported/edited-photo.png-9bca8426a38f5180eee3e46e989cb73c.ctex"]
+source_file="res://assets/turbine_pics/main_blades.png"
+dest_files=["res://.godot/imported/main_blades.png-51be9a4f3c69ceeaf6696580e6527a78.ctex"]
 
 [params]
 

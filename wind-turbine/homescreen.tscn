@@ -30,7 +30,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="background" type="Sprite2D" parent="." unique_id=1002962264]
-position = Vector2(567.4999, 310.8125)
+position = Vector2(552.00006, 323)
 scale = Vector2(2.0189004, 1.2186937)
 texture = SubResource("CompressedTexture2D_l36qu")
 
