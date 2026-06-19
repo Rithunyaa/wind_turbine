@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://qctvg8uu3280"]
 
-[node name="Control" type="Control" unique_id=1009799085]
+[node name="MainMenu" type="Control" unique_id=1009799085]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 11.0
+offset_top = 6.0
+offset_right = 11.0
+offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
