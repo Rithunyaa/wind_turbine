@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg1f2vbpt54rw"
-path="res://.godot/imported/turbine_blade.png-42dbc7a441fcc45c6d7ce924b52b3d11.ctex"
+uid="uid://bpwk71vo7b4mv"
+path="res://.godot/imported/turbine_center.png-bbbf737887ef3cfdd0f5d1f370928163.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/turbine_blade.png"
-dest_files=["res://.godot/imported/turbine_blade.png-42dbc7a441fcc45c6d7ce924b52b3d11.ctex"]
+source_file="res://assets/turbine_pics/turbine_center.png"
+dest_files=["res://.godot/imported/turbine_center.png-bbbf737887ef3cfdd0f5d1f370928163.ctex"]
 
 [params]
 

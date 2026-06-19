@@ -1,6 +1,23 @@
 [gd_scene format=3 uid="uid://qctvg8uu3280"]
 
-[node name="MainMenu" type="Control" unique_id=1009799085]
+[ext_resource type="Texture2D" uid="uid://s68k4gj0t3m8" path="res://assets/PastelUIFree.png/PastelUIFree.png" id="1_tq0vd"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_l36qu"]
+load_path = "res://.godot/imported/pixel art.jpg-350a121e5e073895cea12f6667eb610a.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a33i8"]
+atlas = ExtResource("1_tq0vd")
+region = Rect2(104, 0, 72, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bjcg"]
+atlas = ExtResource("1_tq0vd")
+region = Rect2(183, 176, 52, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tq0vd"]
+atlas = ExtResource("1_tq0vd")
+region = Rect2(183, 192, 52, 15)
+
+[node name="GameScreen" type="Control" unique_id=1009799085]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,3 +28,32 @@ offset_right = 11.0
 offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="background" type="Sprite2D" parent="." unique_id=1002962264]
+position = Vector2(567.4999, 310.8125)
+scale = Vector2(2.0189004, 1.2186937)
+texture = SubResource("CompressedTexture2D_l36qu")
+
+[node name="MainMenu" type="Node" parent="." unique_id=929384466]
+
+[node name="pink_popup" type="Sprite2D" parent="MainMenu" unique_id=908650854]
+position = Vector2(553, 310)
+scale = Vector2(9.916666, 6.6614585)
+texture = SubResource("AtlasTexture_a33i8")
+
+[node name="play_button" type="TextureButton" parent="MainMenu" unique_id=1827156066]
+offset_left = 346.0
+offset_top = 189.0
+offset_right = 741.0
+offset_bottom = 303.0
+texture_normal = SubResource("AtlasTexture_1bjcg")
+ignore_texture_size = true
+stretch_mode = 1
+
+[node name="settings_button" type="TextureButton" parent="MainMenu" unique_id=1362322718]
+offset_left = 353.0
+offset_top = 346.0
+offset_right = 748.0
+offset_bottom = 460.0
+texture_normal = SubResource("AtlasTexture_tq0vd")
+stretch_mode = 1
