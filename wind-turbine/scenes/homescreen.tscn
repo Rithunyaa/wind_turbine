@@ -96,7 +96,7 @@ grow_vertical = 2
 script = ExtResource("1_v5pf5")
 
 [node name="background" type="Sprite2D" parent="." unique_id=2061220165]
-position = Vector2(562.5, 316.75)
+position = Vector2(571.00006, 326)
 scale = Vector2(2.0223367, 1.2009009)
 texture = ExtResource("1_ro446")
 
@@ -237,9 +237,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="MainCenter" type="Sprite2D" parent="." unique_id=752288098]
-position = Vector2(519, 319)
+position = Vector2(541, 471)
 texture = ExtResource("6_mh3ht")
 
 [node name="MainBlades" type="Sprite2D" parent="." unique_id=1414643529]
-position = Vector2(524, 220)
+position = Vector2(541.75006, 343)
+scale = Vector2(1.8388554, 1.6883116)
 texture = ExtResource("7_vhtrk")

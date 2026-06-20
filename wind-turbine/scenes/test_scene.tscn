@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dvbi7qihwwggj"]
+
+[ext_resource type="Texture2D" uid="uid://cp0v2xk7poyxl" path="res://assets/backgrounds/Clouds pixel art.jpg" id="1_nd71p"]
+[ext_resource type="Texture2D" uid="uid://d2oqdy7g28rj7" path="res://assets/turbine_pics/main_center.png" id="2_7ddre"]
+[ext_resource type="Script" uid="uid://earsle6hp4i1" path="res://scenes/turbine.gd" id="2_qjeyg"]
+[ext_resource type="Texture2D" uid="uid://br376hmemgofp" path="res://assets/turbine_pics/main_blades.png" id="3_qjeyg"]
+
+[node name="TestScene" type="Node2D" unique_id=683687502]
+
+[node name="background" type="Sprite2D" parent="." unique_id=191917218]
+position = Vector2(2504, -416.99994)
+scale = Vector2(1.6755102, 1.5063025)
+texture = ExtResource("1_nd71p")
+
+[node name="Turbine" type="Node2D" parent="." unique_id=752862496]
+position = Vector2(562, 304)
+script = ExtResource("2_qjeyg")
+
+[node name="MainCenter" type="Sprite2D" parent="Turbine" unique_id=2050421965]
+position = Vector2(-0.99993896, 80)
+scale = Vector2(0.85897434, 0.8923358)
+texture = ExtResource("2_7ddre")
+
+[node name="MainBlades" type="Sprite2D" parent="Turbine" unique_id=1917395191]
+position = Vector2(-0.99998665, 3.9999857)
+scale = Vector2(1.376632, 1.166838)
+texture = ExtResource("3_qjeyg")
