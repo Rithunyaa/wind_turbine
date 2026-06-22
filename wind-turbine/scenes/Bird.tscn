@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://i2ulj0geytkh"]
+
+[ext_resource type="Script" uid="uid://vhmwraauyb2" path="res://scenes/bird.gd" id="1_81snh"]
+[ext_resource type="Texture2D" uid="uid://buh7ty2tsysio" path="res://assets/Bird/edited-photo.png" id="2_xwlh1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oa7tn"]
+atlas = ExtResource("2_xwlh1")
+region = Rect2(159, 477, 159, 159)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_636r2"]
+atlas = ExtResource("2_xwlh1")
+region = Rect2(0, 477, 159, 159)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lvohb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oa7tn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_636r2")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Bird" type="CharacterBody2D" unique_id=1473921461]
+script = ExtResource("1_81snh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=170185556]
+sprite_frames = SubResource("SpriteFrames_lvohb")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1410270702]
