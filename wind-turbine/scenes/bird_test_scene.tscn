@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://d00j75whr2l86"]
+
+[ext_resource type="Texture2D" uid="uid://cp0v2xk7poyxl" path="res://assets/backgrounds/Clouds pixel art.jpg" id="1_0lroj"]
+[ext_resource type="PackedScene" uid="uid://i2ulj0geytkh" path="res://scenes/Bird.tscn" id="5_0747o"]
+
+[node name="TestScene" type="Node2D" unique_id=683687502]
+
+[node name="background2" type="Sprite2D" parent="." unique_id=1369168670]
+position = Vector2(560, 336)
+scale = Vector2(2.8073344, 2.2689471)
+texture = ExtResource("1_0lroj")
+
+[node name="Bird" parent="." unique_id=1473921461 instance=ExtResource("5_0747o")]
+position = Vector2(226, 222)
