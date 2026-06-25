@@ -1,14 +1,27 @@
 [gd_scene format=3 uid="uid://dvbi7qihwwggj"]
 
 [ext_resource type="Texture2D" uid="uid://cp0v2xk7poyxl" path="res://assets/backgrounds/Clouds pixel art.jpg" id="1_nd71p"]
+[ext_resource type="Script" uid="uid://bih6pf2i8eajd" path="res://scenes/test_scene.gd" id="1_wtsjf"]
 [ext_resource type="Texture2D" uid="uid://d2oqdy7g28rj7" path="res://assets/turbine_pics/main_center.png" id="2_7ddre"]
 [ext_resource type="Script" uid="uid://earsle6hp4i1" path="res://scenes/turbine.gd" id="2_qjeyg"]
 [ext_resource type="Texture2D" uid="uid://br376hmemgofp" path="res://assets/turbine_pics/main_blades.png" id="3_qjeyg"]
 [ext_resource type="PackedScene" uid="uid://i2ulj0geytkh" path="res://scenes/Bird.tscn" id="5_qjeyg"]
+[ext_resource type="FontFile" uid="uid://scyckufd8qa6" path="res://assets/fonts/BoldPixels.ttf" id="6_3qnke"]
+[ext_resource type="Script" uid="uid://cfib1wippe51y" path="res://scenes/game_over.gd" id="8_s36qc"]
+[ext_resource type="Texture2D" uid="uid://c82rv4ob3qwpg" path="res://assets/Screenshot 2026-06-22 215220 - Copy.png" id="9_6qxox"]
+[ext_resource type="Texture2D" uid="uid://bkgci8ub5d25q" path="res://assets/Screenshot 2026-06-22 215220 - Copy (2).png" id="10_gthg3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wtsjf"]
+bg_color = Color(0, 0, 0, 0.68235296)
+corner_radius_top_left = 80
+corner_radius_top_right = 80
+corner_radius_bottom_right = 80
+corner_radius_bottom_left = 80
 
 [node name="TestScene" type="Node2D" unique_id=683687502]
+script = ExtResource("1_wtsjf")
 
-[node name="background2" type="Sprite2D" parent="." unique_id=1369168670]
+[node name="sky_background" type="Sprite2D" parent="." unique_id=1369168670]
 position = Vector2(560, 336)
 scale = Vector2(2.8073344, 2.2689471)
 texture = ExtResource("1_nd71p")
@@ -33,6 +46,65 @@ texture = ExtResource("3_qjeyg")
 polygon = PackedVector2Array(13.469299, -186.76323, -9.100876, -184.85098, -9.464905, -174.65231, -15.2894745, -172.10265, -15.653503, -142.78145, -20.385956, -140.23178, -21.842102, -109.63576, -26.210526, -104.536415, -26.938599, -79.67715, -32.03508, -75.852646, -32.763153, -55.45529, -37.49562, -54.180458, -37.85965, -38.882446, -32.763153, -40.157272, -32.399124, -25.496689, -26.574554, -25.496689, -26.938599, -14.660599, -21.478073, -14.660599, -21.478073, -8.923843, -26.574554, -6.374161, -32.399124, 1.912262, -32.763153, 10.198685, -37.85965, 10.198685, -38.22368, 26.13411, -42.956146, 29.321198, -45.50438, 33.78311, -50.236847, 35.057953, -50.600876, 38.882446, -56.425446, 40.157288, -56.0614, 44.6192, -61.88597, 45.256622, -61.88597, 50.993378, -67.710526, 50.355957, -67.710526, 55.455307, -73.899124, 56.730133, -73.899124, 62.46689, -80.45176, 62.46689, -80.45176, 68.20364, -85.54825, 68.20364, -85.912285, 73.9404, -91.73685, 73.9404, -92.10088, 80.95198, -97.56141, 80.31456, -97.56141, 85.413895, -103.75001, 86.051315, -103.38597, 91.15065, -109.93861, 93.70033, -110.30264, 97.524826, -115.76317, 100.07451, -115.76317, 104.53642, -121.95177, 105.17384, -121.223694, 109.63576, -126.68422, 109.63576, -128.14035, 115.37251, -132.87282, 116.647354, -133.23685, 121.10927, -139.78949, 122.38411, -139.42545, 128.75829, -145.25002, 128.12086, -145.25002, 133.85762, -151.43861, 133.85762, -151.07457, 140.2318, -156.89914, 142.14403, -158.71931, 145.96855, -162.35966, 147.24336, -163.08774, 162.5414, -151.80264, 163.81624, -151.80264, 158.07948, -139.42545, 156.80464, -139.42545, 151.06789, -134.693, 151.06789, -133.60089, 145.33113, -121.223694, 145.33113, -120.85966, 138.95695, -115.39913, 138.95695, -115.39913, 133.85762, -104.114044, 133.2202, -104.114044, 127.483444, -98.28948, 127.483444, -98.28948, 123.02153, -85.912285, 121.74669, -86.27632, 116.00993, -80.45176, 115.37251, -80.08772, 108.99834, -68.4386, 109.63576, -67.710526, 104.53642, -61.521927, 103.26158, -61.88597, 98.16225, -49.872803, 98.16225, -50.236847, 91.15065, -44.04825, 91.78807, -44.77632, 86.051315, -33.127197, 86.688736, -32.763153, 79.67714, -26.574554, 80.31456, -26.938599, 56.092712, -21.478073, 56.092712, -21.114029, 49.08113, 21.842117, 49.08113, 22.570175, 58.004974, 26.938599, 58.004974, 26.938599, 63.10431, 32.76317, 63.10431, 33.127197, 68.841064, 38.223694, 68.841064, 38.223694, 74.57782, 45.140366, 74.57782, 45.140366, 80.31456, 50.60089, 80.31456, 96.469315, 126.84602, 136.51317, 167.64073, 149.61845, 165.72847, 123.77196, 125.57118, 89.55266, 76.49007, 63.70616, 33.14569, 31.671066, 28.046356, 31.671066, 11.473511, 26.57457, 10.198685, 26.57457, 0, 21.478073, -0.63742065, 14.561417, -11.473511)
 
 [node name="Bird" parent="." unique_id=1473921461 instance=ExtResource("5_qjeyg")]
-position = Vector2(226, 222)
+position = Vector2(771, 317)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=421283006]
+
+[node name="TimerLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=1070362084]
+offset_left = 939.0
+offset_top = 13.0
+offset_right = 1139.0
+offset_bottom = 57.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_3qnke")
+theme_override_font_sizes/normal_font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameOverPopup" type="Node2D" parent="." unique_id=993159745]
+script = ExtResource("8_s36qc")
+
+[node name="Panel" type="Panel" parent="GameOverPopup" unique_id=1100389410]
+offset_left = 218.0
+offset_top = 155.0
+offset_right = 891.0
+offset_bottom = 505.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wtsjf")
+
+[node name="record_label" type="RichTextLabel" parent="GameOverPopup" unique_id=1074071189]
+offset_left = 278.0
+offset_top = 184.0
+offset_right = 833.0
+offset_bottom = 265.0
+theme_override_colors/default_color = Color(0.9607843, 0.9607843, 0.9607843, 1)
+theme_override_fonts/normal_font = ExtResource("6_3qnke")
+theme_override_font_sizes/normal_font_size = 50
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="final_time_label" type="RichTextLabel" parent="GameOverPopup" unique_id=829159352]
+offset_left = 237.0
+offset_top = 259.0
+offset_right = 873.0
+offset_bottom = 370.0
+theme_override_colors/default_color = Color(0.9607843, 0.9607843, 0.9607843, 1)
+theme_override_fonts/normal_font = ExtResource("6_3qnke")
+theme_override_font_sizes/normal_font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="home_button" type="TextureButton" parent="GameOverPopup" unique_id=1793824442]
+offset_left = 287.0
+offset_top = 338.0
+offset_right = 442.0
+offset_bottom = 488.0
+texture_normal = ExtResource("9_6qxox")
+
+[node name="retry_button" type="TextureButton" parent="GameOverPopup" unique_id=314630648]
+offset_left = 647.0
+offset_top = 334.0
+offset_right = 803.0
+offset_bottom = 490.0
+texture_normal = ExtResource("10_gthg3")
 
 [connection signal="body_entered" from="Turbine/MainBlades/Area2D" to="Turbine" method="_on_body_entered"]

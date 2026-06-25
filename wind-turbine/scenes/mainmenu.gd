@@ -110,3 +110,7 @@ func _on_play_hover():
 func _on_play_exit():
 	var tween = create_tween()
 	tween.tween_property(play_button, "scale", play_original_scale, 0.08)
+
+
+func _on_play_button_pressed():
+	get_tree().change_scene_to_file("res://scenes/test_scene.tscn")

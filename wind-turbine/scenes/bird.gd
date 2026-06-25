@@ -11,6 +11,8 @@ func _ready():
 	add_to_group("player")
 
 func _physics_process(delta):
+	if GameData.game_over:
+		return
 	var direction = Vector2.ZERO
 
 	if Input.is_action_pressed("move_right"):
