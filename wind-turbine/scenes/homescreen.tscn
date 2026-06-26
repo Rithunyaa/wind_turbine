@@ -101,7 +101,6 @@ scale = Vector2(2.0223367, 1.2009009)
 texture = ExtResource("1_ro446")
 
 [node name="MainMenu" type="Control" parent="." unique_id=851237064]
-visible = false
 anchors_preset = 0
 
 [node name="pink_popup" type="Sprite2D" parent="MainMenu" unique_id=908650854]

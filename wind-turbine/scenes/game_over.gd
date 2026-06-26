@@ -1,7 +1,6 @@
 extends Node2D
 
 @onready var record_label = $record_label
-@onready var home_button = $home_button
 @onready var retry_button = $retry_button
 @onready var time_alive_label = $final_time_label
 
@@ -16,7 +15,6 @@ func _ready():
 
 	print("HIGH SCORE LOADED:", high_score)
 
-	home_button.pressed.connect(_on_home_pressed)
 	retry_button.pressed.connect(_on_retry_pressed)
 
 
